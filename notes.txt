@@ -24,7 +24,7 @@ continous = inifinte amount of possible actions
 benign vs adversarial
 
 benign = has no own purpose
-adversarial = might have purpose
+adversarial = no adverserie, opponent
 
 AI is uncertainty manager
 
