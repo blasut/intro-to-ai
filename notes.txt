@@ -32,14 +32,110 @@ Probabilityyy
 
 Unit 1 done.
 
+-----------------------------------------------------------------------------------------
+Unit 2
+
+Route finding problem
+...
+
+What is a problem?
+
+- Initial state
+- Action(s)
+- Result(s,a) -> s
+  s = state
+  a = action
+- Goaltest(s) -> T|F
+  Is this state the goal?
+- PathCost(s -> a -> s) -> n
+  The cost of the path
+  Takes a sequence of states
+
+  StepCost(s,a,s') -> n
+  For each step
+
+
+Exemple route finding:
+
+Follownig each possible solution build a sequence of paths
+
+Could be represented as a tree-like strukture with different StepCosts per node
+
+The edge of the graph is called the frontier
+Then there is the explored and unexplored regions in the graph.
+
+This is solved by a tree-search, there are different functions that could be used.
+
+Breadth-first search:
+
+Expand the shortest path in the graph.
+
+Better with a graph-search because keeping track of the known states
+
+Uniform cost search (cheapest first):
+
+Guarantees the cheapest cost path.
+
+Depth-first:
+
+Expand the longest path (the path with the most links in it)
+
+Depth-first without explored state saving, is very effecient
+
+Depth-first search is not complete. Because it might not get to the goal.
+
+A* search:
+
+f = g + h
+g(path) = path cost
+h(path) = h(s) = estimated distance to goal
+
+
+a
+x y
+
+b
+x y
+
+Number of states:
+2x2x2 = 8
+
+---
+
+
+Power switch: 3 states
+Dirt sensing camera: 2 states
+Brushes heigths: 5 states
+Initial positions: 10 states
+Visible: 2states for each position
+Dirt: 2states for each position
+
+2^10 because there are 2 states for each position.
+
+3*2*5*2^10*10
+
+= 307,200 possible states
+
+Given a description of a problem, can we get a good h function automagically?
+
+Crossing out rules = Relaxing
+
+Problem-solving with search works when:
+- Fully observable
+- Known domain, we have to know the set of available actions
+- Discrete (finite number of action)
+- Deterministic
+- Static (nothing else than our own actions can change the problem)
+
+A -> S -> F
+
+Linked lists with nodes to represent
+
+2 data-structures to think about with nodes
+
+Frontier, and explored.
 
 
 
-
-
-
-
-
-
-
+-----------------------------------------------------------------------------------------
 
