@@ -1,0 +1,40 @@
+Trying out some AI coourselol
+
+Agent <- sensors <- environment
+
+Agent -> actuators -> environment
+
+Perception Action Cycle
+
+Termer:
+
+Fully vs partially observable
+
+Fully: All cards on the table, the information is sufficent to make a choice
+Partially: Poker, its needed to store past moves and guess to make a choice.
+
+Deterministic vs stochastic
+
+Deterministic = chesse
+Stochastic = games with dice, because we cant know the outcome, certain amount of randomness
+
+discrete = final amount of possible actions
+continous = inifinte amount of possible actions
+
+benign vs adversarial
+
+benign = has no own purpose
+adversarial = might have purpose
+
+AI is uncertainty manager
+
+
+
+
+
+
+
+
+
+
+
